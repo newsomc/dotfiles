@@ -1,0 +1,9 @@
+[user]
+	name = santi
+	email = santialbo@gmail.com
+[alias]
+	s = status
+    a = !git add . && git status
+    d = diff --color
+    l = git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/'
