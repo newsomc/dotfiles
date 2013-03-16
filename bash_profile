@@ -54,7 +54,19 @@
 	export PATH=/opt/local/bin:/opt/local/sbin:$PATH
     export PATH=/usr/local/mysql/bin:$PATH
 
+
+# DJANGO EXPORTS
+
     export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+
+    export LANG="en_us.UTF-8"
+    export LC_COLLATE="en_us.UTF-8"
+    export LC_CTYPE="en_us.UTF-8"
+    export LC_MESSAGES="en_us.UTF-8"
+    export LC_MONETARY="en_us.UTF-8"
+    export LC_NUMERIC="en_us.UTF-8"
+    export LC_TIME="en_us.UTF-8"
+    export LC_ALL=
 	
 # Make 'source .bash_profile' return 0
 true
