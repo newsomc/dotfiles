@@ -6,6 +6,8 @@ all:
 	ln -s $(CURDIR)/vim ~/.vim
 	ln -s $(CURDIR)/vimrc ~/.vimrc
 	ln -s $(CURDIR)/gvimrc ~/.gvimrc
+	git submodule init
+	git submodule update
 
 clean:
 	rm -f ~/.git-prompt.sh ~/.gitconfig ~/.bash_profile ~/.inputrc ~/.vimrc ~/.gvimrc 
