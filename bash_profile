@@ -54,6 +54,7 @@
 	export PATH=/opt/local/bin:/opt/local/sbin:$PATH
     export PATH=/usr/local/mysql/bin:$PATH
 
+    export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 	
 # Make 'source .bash_profile' return 0
 true
