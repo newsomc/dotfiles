@@ -7,12 +7,18 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Solarized'
 
-Bundle 'scrooloose/nerdtree'      " project tree
-Bundle 'tpope/vim-fugitive'       " git wrapper
-Bundle 'EasyMotion'               " move faster through the code with
-Bundle 'surround.vim'             " change surrounding block characters
-Bundle 'SuperTab-continued.'      " autocompletion
-Bundle 'snipMate'                 " snippets
+" project tree
+Bundle 'scrooloose/nerdtree'
+" git wrapper
+Bundle 'tpope/vim-fugitive'
+" move faster through the code with
+Bundle 'EasyMotion'
+" change surrounding block characters
+Bundle 'surround.vim'
+" autocompletion
+Bundle 'SuperTab-continued.'
+" snippets
+Bundle 'snipMate'
 
 " Settings
 
