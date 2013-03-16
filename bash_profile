@@ -52,6 +52,7 @@
 
 	export PATH=/usr/local/bin:$PATH
 	export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+    export PATH=/usr/local/mysql/bin:$PATH
 
 	
 # Make 'source .bash_profile' return 0
