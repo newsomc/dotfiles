@@ -19,6 +19,8 @@ Bundle 'surround.vim'
 Bundle 'SuperTab-continued.'
 " snippets
 Bundle 'snipMate'
+" comment and uncomment code
+Bundle 'comments.vim'
 
 " Settings
 
@@ -67,7 +69,6 @@ inoremap {{     {
 inoremap {}     {}
 
 " Nerdtree
-autocmd vimenter * NERDTree
 let NERDTreeShowBookmarks=1
 let NERDTreeChDirMode=0
 let NERDTreeQuitOnOpen=0
