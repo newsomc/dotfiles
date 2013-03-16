@@ -8,6 +8,7 @@ Installation
 **Installation will delete previous dotfiles in your home folder**
 
 Run the following commands:
+
     git clone git@github.com:santialbo/dotfiles.git
     cd dotfiles
     make clean && make
