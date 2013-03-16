@@ -6,10 +6,14 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'Solarized'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'EasyMotion'
- 
+
+Bundle 'scrooloose/nerdtree'      " project tree
+Bundle 'tpope/vim-fugitive'       " git wrapper
+Bundle 'EasyMotion'               " move faster through the code with
+Bundle 'surround.vim'             " change surrounding block characters
+Bundle 'SuperTab-continued.'      " autocompletion
+Bundle 'snipMate'                 " snippets
+
 " Settings
 
 syntax enable
@@ -42,6 +46,19 @@ set softtabstop=4
 " Mappings
 let mapleader = "-"
 map <leader>t :NERDTreeToggle<cr>
+" Easy window navigation
+nmap <leader>h <C-w>h
+nmap <leader>j <C-w>j
+nmap <leader>k <C-w>k
+nmap <leader>l <C-w>l
+
+vmap < <gv                        " keep visual block selection
+vmap > >gv                        " keep visual block selection
+
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
 
 " Nerdtree
 autocmd vimenter * NERDTree
