@@ -22,6 +22,7 @@ Bundle 'snipMate'
 " comment and uncomment code
 Bundle 'comments.vim'
 
+
 " Settings
 
 syntax enable
@@ -64,9 +65,15 @@ vmap < <gv                        " keep visual block selection
 vmap > >gv                        " keep visual block selection
 
 inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap (      ()<Left>
+inoremap ((     (
+inoremap ()     ()
+inoremap [      []<Left>
+inoremap [[     [
+inoremap []     []
 
 " Nerdtree
 let NERDTreeShowBookmarks=1
