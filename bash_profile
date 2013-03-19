@@ -23,6 +23,9 @@
     # append rather than overwrite the history on disk
     shopt -s histappend
 
+    # append to history after every command.
+    export PROMPT_COMMAND="history -a; history -n"
+
     # enables seeing current branch in the prompt
     if [ -f ~/.git-prompt.sh ]; then
         . ~/.git-prompt.sh
