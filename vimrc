@@ -21,7 +21,8 @@ Bundle 'SuperTab-continued.'
 Bundle 'snipMate'
 " comment and uncomment code
 Bundle 'comments.vim'
-
+" show diff next to line number
+Bundle 'airblade/vim-gitgutter'
 
 " Settings
 
