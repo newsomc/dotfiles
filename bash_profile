@@ -23,12 +23,17 @@
 	# append rather than overwrite the history on disk
 	shopt -s histappend
 
-	## enable the git bash completion commands
+    # enables seeing current branch in the prompt
     if [ -f ~/.git-prompt.sh ]; then
 	    . ~/.git-prompt.sh
     fi
 
-    # bash-completion
+    # enables git autocompletion
+    if [ -f ~/.git-completion.sh ]; then
+	    . ~/.git-completion.sh
+    fi
+
+    # enables bash-completion
     if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
         . /opt/local/etc/profile.d/bash_completion.sh
     fi
