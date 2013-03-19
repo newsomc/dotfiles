@@ -58,8 +58,7 @@
     ORANGE='\[\033[0;33m\]'
     RESET='\[\033[0m\]'
 
-    # Set Titlebar and Prompt
-    TITLEBAR='\e]0;\h: ${PWD/$HOME/~}'
+    # set prompt to indicate current git branch if available
     PS1="${GREEN}\w${RESET} ${ORANGE}"'$(__git_ps1 "(%s)")'"${RESET}\n⌘ "
 
 
