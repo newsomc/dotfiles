@@ -24,7 +24,14 @@
 	shopt -s histappend
 
 	## enable the git bash completion commands
-	source ~/.git-prompt.sh
+    if [ -f ~/.git-prompt.sh ]; then
+	    . ~/.git-prompt.sh
+    fi
+
+    # bash-completion
+    if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+        . /opt/local/etc/profile.d/bash_completion.sh
+    fi
 	 
 	# enable git unstaged indicators - set to a non-empty value
 	GIT_PS1_SHOWDIRTYSTATE="."
@@ -57,7 +64,7 @@
 
 # DJANGO EXPORTS
 
-    export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+    # export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 
     export LANG="en_us.UTF-8"
     export LC_COLLATE="en_us.UTF-8"
